@@ -24,6 +24,8 @@ def connectDB():
             mycursor.close()
         if mydb:
             mydb.close()
+
+connectDB()
     
     
 
