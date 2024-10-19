@@ -15,7 +15,7 @@ def connectDB():
             )
         mycursor = mydb.cursor()
         print("Database 'alx_book_store' created successfully!")
-    except mysql.exceptions.ConnectionError as e:
+    except mysql.connector.Error as e:
         print(f"Error connecting to database: {e}")
     except Error as e:
         print(e)
